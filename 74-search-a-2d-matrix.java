@@ -18,9 +18,9 @@ class Solution {
             if(matrix[row][0]<=target && matrix[row][m-1]>=target)
                 break;
             else if(target<matrix[row][0])
-                hi--;
+                hi = row-1;
             else if(target>matrix[row][m-1])
-                l++;
+                l = row+1;
         }
 
         // find target in the selected row
@@ -32,9 +32,9 @@ class Solution {
             if(matrix[row][mid]==target)
                 return true;
             else if(matrix[row][mid]>target)
-                hi--;
+                hi = mid-1;
             else if(matrix[row][mid]<target)
-                l++;
+                l = mid+1;
         }
         
         return false;
