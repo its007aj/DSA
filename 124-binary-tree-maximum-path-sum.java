@@ -39,7 +39,7 @@ class Solution {
 
         int max1 = Math.max(Math.max(leftSum, rightSum)+root.val, root.val);
 
-        int max2 =  Math.max(max1, rightSum+root.val+leftSum);
+        int max2 = Math.max(max1, rightSum+root.val+leftSum);
 
         max = Math.max(max2, max);
 
