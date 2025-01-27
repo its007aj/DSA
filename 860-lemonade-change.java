@@ -5,7 +5,6 @@ https://leetcode.com/problems/lemonade-change/description/
 class Solution {
     public boolean lemonadeChange(int[] bills) {
         
-        PriorityQueue<Integer> highToLow = new PriorityQueue<>((a,b) -> b - a);
         int[] billCount = new int[2];
 
         billCount[0] = 0;
